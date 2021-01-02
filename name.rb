@@ -2,13 +2,17 @@
 
 greeting = "Welcome, "
 
-puts "Please enter your name :)"
+puts "Hi, there. What's your first name please?"
 
-name = gets.chomp
+first_name = gets.chomp
 
-puts greeting + name
+puts "And your last name?"
+
+last_name = gets.chomp
+
+puts greeting + first_name + " " + last_name
 
 #Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly.
 10.times do
-  puts name
+  puts first_name
 end
